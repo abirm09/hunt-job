@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const DisplaySingleCart = ({ job }) => {
   const {
     job_id,
@@ -12,6 +12,7 @@ const DisplaySingleCart = ({ job }) => {
     salary,
     location,
   } = job;
+  const navigate = useNavigate();
   return (
     <div className="border p-6 space-y-4 rounded-lg">
       <figure>
@@ -35,8 +36,11 @@ const DisplaySingleCart = ({ job }) => {
           salary : {salary}
         </p>
       </div>
-      <button className="btn cs-gradient border-none normal-case font-extrabold">
-        <Link to="">View Details</Link>
+      <button
+        onClick={() => navigate(`jobs/${job_id}`)}
+        className="btn cs-gradient border-none normal-case font-extrabold"
+      >
+        View Details
       </button>
     </div>
   );

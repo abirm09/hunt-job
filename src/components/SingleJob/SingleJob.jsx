@@ -1,14 +1,27 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { LoaderDataContext } from "../../App";
-import Header from "../Header/Header";
-
+import { useParams } from "react-router-dom";
 const SingleJob = () => {
-  //   const data = useContext(LoaderDataContext || []);
-  //   console.log(data);
+  const data = useContext(LoaderDataContext || []);
+  const { jobId } = useParams();
+  const [singleCartData, setSingleCartData] = useState({});
+  useEffect(() => {
+    const cartData = data.allJobs.find(dd => dd.job_id == jobId);
+    setSingleCartData(cartData);
+  }, [jobId]);
+  const {
+    job_id,
+    company_logo,
+    job_title,
+    company_name,
+    remote_or_onsite,
+    fulltime_or_parttime,
+    salary,
+    location,
+  } = singleCartData;
   return (
-    <div>
-      <Header />
-      <h2>Single job</h2>
+    <div className="max-w-7xl mx-auto px-2">
+      <h2>{job_title}</h2>
     </div>
   );
 };

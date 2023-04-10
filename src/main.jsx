@@ -33,14 +33,15 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
+        path: "jobs/:jobId",
+        element: <SingleJob />,
+        loader: () => fetch(""),
+      },
+      {
         path: "*",
         element: <Error />,
       },
     ],
-  },
-  {
-    path: "jobs/:jobId",
-    element: <SingleJob />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
