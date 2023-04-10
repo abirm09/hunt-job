@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 
 const App = () => {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <Header />

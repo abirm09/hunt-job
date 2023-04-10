@@ -8,7 +8,7 @@
 
 /* cs stands for custom */
 .cs-gradient {
-  @apply bg-gradient-to-r from-[#7E90FE] to-[#9873FF];
+  @apply bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border-none;
 }
 .text-gradient {
   /* background-color: red; */
