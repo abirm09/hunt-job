@@ -4,9 +4,10 @@ import Header from "./components/Header/Header";
 
 export const LoaderDataContext = createContext({});
 
+export const handleApplyBtn = job => {};
 const App = () => {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <LoaderDataContext.Provider value={data}>

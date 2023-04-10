@@ -8,6 +8,7 @@ import {
   PhoneIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/solid";
+import { addToDb } from "../../utility/fakedb";
 const SingleJob = () => {
   const data = useContext(LoaderDataContext || []);
   const { jobId } = useParams();
@@ -31,6 +32,9 @@ const SingleJob = () => {
     experiences,
     contact_information,
   } = singleCartData;
+  const applyNowHandler = id => {
+    addToDb(id);
+  };
   return (
     <>
       <div className="bg-zinc-100">
@@ -112,7 +116,10 @@ const SingleJob = () => {
                 </p>
               </div>
             </div>
-            <button className="btn cs-gradient w-full mt-5 normal-case">
+            <button
+              onClick={() => applyNowHandler(job_id)}
+              className="btn cs-gradient w-full mt-5 normal-case"
+            >
               Apply Now
             </button>
           </div>
