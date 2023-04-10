@@ -67,7 +67,7 @@ const Home = () => {
                     <DisplaySingleCart key={singleJob.job_id} job={singleJob} />
                   ))}
             </div>
-            <div className="flex justify-center ">
+            <div className="flex justify-center mt-5">
               <button
                 onClick={() => setShowSix(!showSix)}
                 className="btn cs-gradient"
