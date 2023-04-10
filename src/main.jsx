@@ -9,6 +9,7 @@ import Error from "./components/Error/Error";
 import AppliedJobs from "./components/AppliedJobs";
 import { loadAllData } from "./loaders/loadAllData";
 import Blog from "./components/Blog";
+import SingleJob from "./components/SingleJob/SingleJob";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         element: <Error />,
       },
     ],
+  },
+  {
+    path: "jobs/:jobId",
+    element: <SingleJob />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
