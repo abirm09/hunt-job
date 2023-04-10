@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import user from "../assets/userPic.png";
+import { LoaderDataContext } from "../App";
+import DisplaySingleCart from "./DisplaySingleCart/DisplaySingleCart";
 
 const Home = () => {
+  const { allJobs } = useContext(LoaderDataContext || []);
+  const [jobs, setJobs] = useState([]);
+  const [showSix, setShowSix] = useState(true);
+  useEffect(() => {
+    setJobs(allJobs);
+  }, [allJobs]);
   return (
     <>
       <section className="bg-zinc-100">
@@ -21,8 +29,51 @@ const Home = () => {
             </div>
             <div className="col-span-1">
               <figure>
-                <img src={user} alt="" />
+                <img src={user} alt="User" />
               </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="pt-20 lg:pt-28">
+        <div className="container mx-auto px-2">
+          <h2 className="section-title">Job Category List</h2>
+          <p className="section-subtitle mt-4">
+            Explore thousands of job opportunities with all the information you
+            need. Its your future.
+          </p>
+        </div>
+      </section>
+      <section className="pt-20 lg:pt-28">
+        <div className="container mx-auto px-2">
+          <h2 className="section-title">Featured Jobs</h2>
+          <p className="section-subtitle mt-4">
+            Explore thousands of job opportunities with all the information you
+            need. Its your future.
+          </p>
+          {/* display jobs */}
+          <div className="max-w-7xl mx-auto mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {showSix
+                ? allJobs
+                    .slice(0, 4)
+                    .map(singleJob => (
+                      <DisplaySingleCart
+                        key={singleJob.job_id}
+                        job={singleJob}
+                      />
+                    ))
+                : allJobs.map(singleJob => (
+                    <DisplaySingleCart key={singleJob.job_id} job={singleJob} />
+                  ))}
+            </div>
+            <div className="flex justify-center ">
+              <button
+                onClick={() => setShowSix(!showSix)}
+                className="btn cs-gradient"
+              >
+                {showSix ? "See All Jobs" : "See less"}
+              </button>
             </div>
           </div>
         </div>

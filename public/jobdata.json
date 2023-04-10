@@ -7,7 +7,7 @@
     "remote_or_onsite": "Onsite",
     "location": "New York, NY, USA",
     "fulltime_or_parttime": "Full Time",
-    "salary": "70,000 - 90,000 USD/year",
+    "salary": "70,000k - 90,000k",
     "job_description": "We are seeking a skilled Marketing Manager to join our team. As a Marketing Manager, you will be responsible for developing and executing marketing strategies to promote our products and services. You will collaborate with internal and external teams to create and implement campaigns, measure performance, and make data-driven decisions to optimize results.",
     "job_responsibility": [
       "Develop and execute marketing strategies to promote our products and services.",
@@ -31,7 +31,7 @@
     "remote_or_onsite": "Remote",
     "location": "London, UK",
     "fulltime_or_parttime": "Parttime",
-    "salary": "50,000 - 70,000 GBP/year",
+    "salary": "50,000k - 70,000k",
     "job_description": " We are seeking a skilled Software Developer to join our team. As a Software Developer, you will be responsible for developing and maintaining software applications that meet the needs of our clients. You will work with a team of developers and collaborate with clients to identify software requirements, design solutions, and implement and test software applications.",
     "job_responsibility": [
       "Collaborate with clients and team members to identify software requirements and design solutions.",
@@ -55,7 +55,7 @@
     "remote_or_onsite": "Onsite",
     "location": "Toronto, ON, Canada",
     "fulltime_or_parttime": "Parttime",
-    "salary": "40,000 - 50,000 CAD/year",
+    "salary": "40,000k - 50,000k",
     "job_description": "We are seeking a skilled Graphic Designer to join our team. As a Graphic Designer, you will be responsible for creating visually appealing and effective designs for a variety of mediums, including print and digital. You will work closely with clients to understand their design needs and translate them into compelling designs that meet their objectives.",
     "job_responsibility": [
       "Collaborate with clients to understand their design needs and objectives.",
@@ -79,7 +79,7 @@
     "remote_or_onsite": "Onsite",
     "location": "Vancouver, BC, Canada",
     "fulltime_or_parttime": "Full Time",
-    "salary": "60,000 - 80,000 CAD/year",
+    "salary": "60,000k - 80,000k",
     "job_description": "We are seeking a dynamic and driven Sales Representative to join our team. As a Sales Representative, you will be responsible for generating new leads and closing deals to drive revenue growth. You will work closely with prospective clients to understand their needs and develop customized solutions to meet their business objectives.",
     "job_responsibility": [
       "Prospect for new clients and generate leads through various channels, including cold calling, email, and networking events.",
@@ -103,7 +103,7 @@
     "remote_or_onsite": "Onsite",
     "location": "Dubai, UAE",
     "fulltime_or_parttime": "Parttime",
-    "salary": "15,000 - 20,000 AED/month",
+    "salary": "15,000k - 20,000k",
     "job_description": "We are seeking a highly motivated Financial Analyst to join our team. As a Financial Analyst, you will be responsible for analyzing financial data and providing insights to help drive business decisions. You will work closely with cross-functional teams to develop financial models and forecasts, and provide recommendations to improve financial performance.",
     "job_responsibility": [
       "Analyze financial data and provide insights to help drive business decisions.",
@@ -127,7 +127,7 @@
     "remote_or_onsite": "Remote",
     "location": "Manchester, UK",
     "fulltime_or_parttime": "Full Time",
-    "salary": "25,000 - 30,000 GBP/year",
+    "salary": "25,000k - 30,000k",
     "job_description": "We are seeking a Customer Support Representative to join our team. As a Customer Support Representative, you will be responsible for providing exceptional customer service to our clients. You will answer questions, troubleshoot issues, and ensure that our clients have a positive experience with our products and services.",
     "job_responsibility": [
       "Respond to customer inquiries and provide information about our products and services.",

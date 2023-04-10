@@ -4,7 +4,7 @@ import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
   return (
-    <div className="bg-zinc-100">
+    <div className="bg-zinc-100 sticky top-0 z-50 shadow-sm">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">

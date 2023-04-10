@@ -20,3 +20,11 @@
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
+
+.section-title {
+  @apply font-extrabold text-3xl lg:text-5xl text-center;
+}
+
+.section-subtitle {
+  @apply text-center font-medium text-slate-500;
+}
