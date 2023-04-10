@@ -1,0 +1,22 @@
+[
+  {
+    "img": "images/accounts.png",
+    "title": "Account & Finance",
+    "available_job": "300 Jobs Available"
+  },
+  {
+    "img": "images/creativeDesign.png",
+    "title": "Creative Design",
+    "available_job": "100+ Jobs Available"
+  },
+  {
+    "img": "images/social.png",
+    "title": "Marketing & Sales",
+    "available_job": "150 Jobs Available"
+  },
+  {
+    "img": "images/engineering.png",
+    "title": "Engineering Job",
+    "available_job": "224 Jobs Available"
+  }
+]
