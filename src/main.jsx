@@ -7,10 +7,13 @@ import Home from "./components/Home";
 import Statistics from "./components/Statistics";
 import Error from "./components/Error/Error";
 import AppliedJobs from "./components/AppliedJobs";
+import { loadAllData } from "./loaders/loadAllData";
+import Blog from "./components/Blog";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    loader: loadAllData,
     children: [
       {
         path: "/",
@@ -23,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "applied-jobs",
         element: <AppliedJobs />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
       },
       {
         path: "*",
