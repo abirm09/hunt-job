@@ -6,6 +6,7 @@ export const LoaderDataContext = createContext({});
 
 const App = () => {
   const data = useLoaderData();
+  console.log(data);
   return (
     <>
       <LoaderDataContext.Provider value={data}>

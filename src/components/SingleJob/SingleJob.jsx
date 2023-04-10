@@ -73,13 +73,19 @@ const SingleJob = () => {
               <div className="mt-5 space-y-3">
                 <p className="flex font-medium text-xl text-gray-500 items-center">
                   <CurrencyDollarIcon className="h-6 w-6 mr-5" />
-                  <span className="text-zinc-700 font-bold">salary : </span>
-                  {salary} (per Month)
+                  <span>
+                    <span className="text-zinc-700 font-bold">salary :</span>
+                    {salary} (per Month)
+                  </span>
                 </p>
                 <p className="flex font-medium text-xl text-gray-500 ">
                   <CalendarDaysIcon className="h-6 w-6 mr-5" />
-                  <span className="text-zinc-700 font-bold">Job title : </span>
-                  {job_title}
+                  <span>
+                    <span className="text-zinc-700 font-bold">
+                      Job title :{" "}
+                    </span>
+                    {job_title}
+                  </span>
                 </p>
               </div>
               <h2 className="font-extrabold text-xl mt-10">
@@ -99,8 +105,10 @@ const SingleJob = () => {
                 </p>
                 <p className="flex font-medium text-xl text-gray-500 ">
                   <MapPinIcon className="h-6 w-6 mr-5" />
-                  <span className="text-zinc-700 font-bold">Location : </span>
-                  {contact_information && contact_information.email}
+                  <span>
+                    <span className="text-zinc-700 font-bold">Location:</span>
+                    {contact_information && contact_information.email}
+                  </span>
                 </p>
               </div>
             </div>

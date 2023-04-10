@@ -2,13 +2,16 @@ import React, { useContext, useEffect, useState } from "react";
 import user from "../assets/userPic.png";
 import { LoaderDataContext } from "../App";
 import DisplaySingleCart from "./DisplaySingleCart/DisplaySingleCart";
+import JobCategory from "./JobCategory";
 
 const Home = () => {
-  const { allJobs } = useContext(LoaderDataContext || []);
+  const { allJobs, jobCategory } = useContext(LoaderDataContext || {});
   const [jobs, setJobs] = useState([]);
+  const [categoryData, setCategoryData] = useState([]);
   const [showSix, setShowSix] = useState(true);
   useEffect(() => {
     setJobs(allJobs);
+    setCategoryData(jobCategory);
   }, [allJobs]);
   return (
     <>
@@ -42,6 +45,11 @@ const Home = () => {
             Explore thousands of job opportunities with all the information you
             need. Its your future.
           </p>
+          <div className="flex justify-center gap-10 flex-wrap mt-9">
+            {categoryData.map((category, index) => (
+              <JobCategory key={index} data={category} />
+            ))}
+          </div>
         </div>
       </section>
       <section className="pt-20 lg:pt-28">
@@ -55,7 +63,7 @@ const Home = () => {
           <div className="max-w-7xl mx-auto mt-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {showSix
-                ? allJobs
+                ? jobs
                     .slice(0, 4)
                     .map(singleJob => (
                       <DisplaySingleCart
@@ -63,7 +71,7 @@ const Home = () => {
                         job={singleJob}
                       />
                     ))
-                : allJobs.map(singleJob => (
+                : jobs.map(singleJob => (
                     <DisplaySingleCart key={singleJob.job_id} job={singleJob} />
                   ))}
             </div>

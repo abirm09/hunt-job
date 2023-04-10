@@ -35,7 +35,6 @@ const router = createBrowserRouter([
       {
         path: "jobs/:jobId",
         element: <SingleJob />,
-        loader: () => fetch(""),
       },
       {
         path: "*",
