@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "assignment": "assignment1",
+    "name": "assignment1",
     "marks": 60
   },
   {
     "id": 2,
-    "assignment": "assignment2",
+    "name": "assignment2",
     "marks": 60
   },
   {
     "id": 3,
-    "assignment": "assignment3",
+    "name": "assignment3",
     "marks": 60
   },
   {
     "id": 4,
-    "assignment": "assignment4",
+    "name": "assignment4",
     "marks": 60
   },
   {
     "id": 5,
-    "assignment": "assignment5",
+    "name": "assignment5",
     "marks": 60
   },
   {
     "id": 6,
-    "assignment": "assignment6",
+    "name": "assignment6",
     "marks": 60
   },
   {
     "id": 7,
-    "assignment": "assignment7",
+    "name": "assignment7",
     "marks": 59
   },
   {
     "id": 8,
-    "assignment": "assignment8",
+    "name": "assignment8",
     "marks": 60
   }
 ]
