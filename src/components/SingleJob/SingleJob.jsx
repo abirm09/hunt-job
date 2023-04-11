@@ -9,6 +9,7 @@ import {
   EnvelopeIcon,
 } from "@heroicons/react/24/solid";
 import { addToDb } from "../../utility/fakedb";
+import { toast } from "react-hot-toast";
 const SingleJob = () => {
   const data = useContext(LoaderDataContext || []);
   const { jobId } = useParams();
@@ -34,6 +35,7 @@ const SingleJob = () => {
   } = singleCartData;
   const applyNowHandler = id => {
     addToDb(id);
+    toast.success("Applied successfully");
   };
   return (
     <>

@@ -1,6 +1,7 @@
 import React, { createContext } from "react";
 import { Outlet, useLoaderData } from "react-router-dom";
 import Header from "./components/Header/Header";
+import { Toaster } from "react-hot-toast";
 
 export const LoaderDataContext = createContext({});
 
@@ -16,6 +17,7 @@ const App = () => {
           <Outlet />
         </div>
       </LoaderDataContext.Provider>
+      <Toaster />
     </>
   );
 };
