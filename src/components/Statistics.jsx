@@ -11,7 +11,7 @@ const Statistics = () => {
         Assignment marks from assignment 1 to assignment 8.
       </h2>
       <div className="flex justify-center">
-        <PieChart width={400} height={400}>
+        <PieChart width={350} height={400}>
           <Pie
             dataKey="marks"
             isAnimationActive={false}

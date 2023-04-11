@@ -15,7 +15,7 @@ const DisplayAppliedJob = ({ data }) => {
   const navigate = useNavigate();
   return (
     <div className="flex justify-center mb-10">
-      <div className="flex justify-between gap-5 border w-max p-5 flex-wrap rounded-lg">
+      <div className="flex max-w-full justify-between gap-5 border w-max p-5 flex-wrap rounded-lg">
         <figure className="w-max h-max md:w-60 md:h-60 flex justify-center items-center p-5 mx-auto">
           <img src={company_logo} alt={company_name} />
         </figure>
