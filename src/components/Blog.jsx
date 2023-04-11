@@ -3,7 +3,6 @@ import { LoaderDataContext } from "../App";
 
 const Blog = () => {
   const { answers } = useContext(LoaderDataContext || []);
-  console.log(answers);
   return (
     <section>
       <div className="bg-zinc-100">

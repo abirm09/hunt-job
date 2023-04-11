@@ -4,7 +4,6 @@ import { Pie, PieChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
 
 const Statistics = () => {
   const { assignmentData } = useContext(LoaderDataContext || []);
-  console.log(assignmentData);
   return (
     <section>
       <div className="bg-zinc-100">
@@ -12,7 +11,7 @@ const Statistics = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center pt-10 font-extrabold">
-          Assignment marks from assignment 1 to assignment 8.
+          Marks from assignment 1 to assignment 8.
         </h2>
         <div className="flex justify-center">
           <PieChart width={350} height={400}>
