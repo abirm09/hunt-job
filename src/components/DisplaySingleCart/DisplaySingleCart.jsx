@@ -37,7 +37,7 @@ const DisplaySingleCart = ({ job }) => {
         </p>
       </div>
       <button
-        onClick={() => navigate(`jobs/${job_id}`)}
+        onClick={() => navigate(`/jobs/${job_id}`)}
         className="btn cs-gradient border-none normal-case font-extrabold"
       >
         View Details

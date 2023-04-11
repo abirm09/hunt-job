@@ -111,7 +111,7 @@ const SingleJob = () => {
                   <MapPinIcon className="h-6 w-6 mr-5" />
                   <span>
                     <span className="text-zinc-700 font-bold">Location:</span>
-                    {contact_information && contact_information.email}
+                    {location}
                   </span>
                 </p>
               </div>
