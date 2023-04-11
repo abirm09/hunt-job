@@ -8,8 +8,9 @@ const loadAllData = async () => {
   const jobCategory = await getJobCategory.json();
   const getAssignmentData = await fetch("/assignment.json");
   const assignmentData = await getAssignmentData.json();
-
-  return { allJobs, assignmentData, jobCategory };
+  const questionsAnswer = await fetch("/questionAnswers.json");
+  const answers = await questionsAnswer.json();
+  return { allJobs, assignmentData, jobCategory, answers };
 };
 
 export { loadAllData };
