@@ -13,7 +13,7 @@ for live preview.
 
 - There are some pages in the website (Home, Statistics, applied job, Blog).
 - In **Homepage** user can find Some Job Category. And some available Job lists. In job list user win find a view details button.
-- By clicking the button user will redirect to the available job all details. like Job Description, Job responsibility, location, and much more.
+- By clicking the button user will redirect to the available job all details page.User will find some details like Job Description, Job responsibility, location, and much more.
 - On the details page user will find a apply now button. By clicking apply now button the job data will store in users local storage.
 
 - In **Statics** page user will find my assignment mark in a pie chart.
