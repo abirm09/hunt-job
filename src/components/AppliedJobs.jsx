@@ -24,6 +24,20 @@ const AppliedJobs = () => {
   useEffect(() => {
     setFilteredJobs(appliedJobs);
   }, [appliedJobs]);
+  //filter handler
+  const filter = category => {
+    if (category === "Remote") {
+      const remote = appliedJobs.filter(
+        job => job.remote_or_onsite === category
+      );
+      setFilteredJobs(remote);
+    } else if (category === "Onsite") {
+      const onsite = appliedJobs.filter(
+        job => job.remote_or_onsite === category
+      );
+      setFilteredJobs(onsite);
+    }
+  };
   return (
     <section>
       <div className="bg-zinc-100">
@@ -42,11 +56,11 @@ const AppliedJobs = () => {
               tabIndex={0}
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a>Item 1</a>
+              <li onClick={() => filter("Remote")}>
+                <a>Remote</a>
               </li>
-              <li>
-                <a>Item 2</a>
+              <li onClick={() => filter("Onsite")}>
+                <a>Onsite</a>
               </li>
             </ul>
           </div>
